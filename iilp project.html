@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+/* basic settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* header */
+.header {
+  background-color: #1f3a5f;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.menu a:hover {
+  color: orange;
+}
+
+/* home section */
+.home {
+  background-color: #2d5a8e;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.home p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.button {
+  background-color: orange;
+  color: black;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+/* sections */
+.section {
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #1f3a5f;
+}
+
+.section h3 {
+  margin-top: 20px;
+}
+
+.section ul {
+  margin-left: 25px;
+}
+
+/* gray background for projects */
+.gray {
+  max-width: 100%;
+  background-color: #eeeeee;
+}
+
+.boxes {
+  display: flex;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.box {
+  background-color: white;
+  padding: 20px;
+  width: 33%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.box h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* form */
+input, textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 1px solid #999;
+}
+
+button {
+  background-color: #1f3a5f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
+  color: black;
+}
+
+/* footer */
+.footer {
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* for phones */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .menu a {
+    margin: 0 8px;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+  }
+}
+  </style>
+</head>
+<body>
+
+  <!-- header -->
+  <div class="header">
+    <h2 class="logo">Nitesh Sharma</h2>
+    <div class="menu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- home section -->
+  <div class="home">
+    <h1>Hi, I am Nitesh</h1>
+    <p>I am a computer science student and I like making websites.</p>
+    <a href="#projects" class="button">View My Projects</a>
+  </div>
+
+  <!-- about section -->
+  <div class="section" id="about">
+    <h2>About Me</h2>
+    <p>I am studying B.Tech in Computer Science at KIET. I started learning web design in my first year. I like cricket and photography in my free time.</p>
+
+    <h3>My Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Python</li>
+      <li>C++ Programming</li>
+    </ul>
+  </div>
+
+  <!-- projects section -->
+  <div class="section gray" id="projects">
+    <h2>My Projects</h2>
+    <div class="boxes">
+      <div class="box">
+        <h3>Calculator</h3>
+        <p>A simple calculator made using Python.</p>
+      </div>
+      <div class="box">
+        <h3>Cafe Website</h3>
+        <p>A website for a cafe with menu and photos.</p>
+      </div>
+      <div class="box">
+        <h3>Quiz Game</h3>
+        <p>A simple quiz game made using C++ with questions and a score.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact section -->
+  <div class="section" id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <p>Name:</p>
+      <input type="text" placeholder="Enter your name">
+      <p>Email:</p>
+      <input type="email" placeholder="Enter your email">
+      <p>Message:</p>
+      <textarea rows="5" placeholder="Write your message"></textarea>
+      <br><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <p>Made by Nitesh Sharma | 2026</p>
+  </div>
+
+</body>
+</html>
